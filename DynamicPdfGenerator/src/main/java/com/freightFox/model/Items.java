@@ -6,7 +6,7 @@ import lombok.Data;
 public class Items {
 
 	private String name;
-	private String quantity;
+	private Integer quantity;
 	private Integer rate;
-	private Integer amount;
+	private Integer amount = quantity*rate;
 }

@@ -20,4 +20,6 @@ public class SellerController {
 	public ResponseEntity<Seller> addSellerHandler(@RequestBody Seller seller){
 		return new ResponseEntity<Seller>(sellerService.addSeller(seller),HttpStatus.CREATED);
 	}
+	
+	
 }

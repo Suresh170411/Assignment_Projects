@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.freightFox.exception.SellerException;
 import com.freightFox.service.PdfServiceImpl;
 
 @RestController
@@ -20,7 +21,7 @@ public class PdfController {
 	private PdfServiceImpl pdfService;
 	
 	@GetMapping("/pdf/{sellerId}")
-	public ResponseEntity<InputStreamResource> createPdfHandler(@PathVariable ("sellerId") Integer sellerId) {
+	public ResponseEntity<InputStreamResource> createPdfHandler(@PathVariable ("sellerId") Integer sellerId) throws SellerException {
 		
 		ByteArrayInputStream pdf = pdfService.createPdfBySellerId(sellerId);
 		

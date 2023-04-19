@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.freightFox.exception.SellerException;
 import com.freightFox.model.Buyer;
 import com.freightFox.service.BuyerService;
 
@@ -18,7 +19,7 @@ public class BuyerController {
 	private BuyerService buyerService;
 	
 	@PostMapping("/buyer/register/{sellerId}")
-	public ResponseEntity<Buyer> addBuyerHandler(@RequestBody Buyer buyer, @PathVariable ("sellerId") Integer sellerId){
+	public ResponseEntity<Buyer> addBuyerHandler(@RequestBody Buyer buyer, @PathVariable ("sellerId") Integer sellerId) throws SellerException{
 		return new ResponseEntity<Buyer>(buyerService.addBuyer(buyer, sellerId), HttpStatus.CREATED);
 	}
 }

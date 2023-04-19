@@ -3,6 +3,7 @@ package com.freightFox.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.freightFox.exception.SellerException;
 import com.freightFox.model.Seller;
 import com.freightFox.repository.SellerRepository;
 
@@ -18,8 +19,8 @@ public class SellerServiceImpl implements SellerService {
 	}
 
 	@Override
-	public Seller getSellerById(Integer id) {
-		return sellerRepo.findById(id).get();
+	public Seller getSellerById(Integer id) throws SellerException {
+		return sellerRepo.findById(id).orElseThrow(()-> new SellerException("No seller is found with this id !"));
 	}
 
 }
