@@ -7,7 +7,7 @@ Dynamic PDF Generator is a application using which user can generate the pdf of 
 
 ## ER Diagram
 <p align="left">
-  <img width="500" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/ER%20Diagram.png">
+  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/ER%20Diagram.png">
 </p>
 
 ## Features
