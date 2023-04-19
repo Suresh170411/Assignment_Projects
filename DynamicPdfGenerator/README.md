@@ -36,8 +36,6 @@ Home page for front end of Swagger-ui
   <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/Swagger_Schema.png">
 </p>
 
-```
-
 ## Technologies And Dependencies Used
 - Java
 - Spring Boot
