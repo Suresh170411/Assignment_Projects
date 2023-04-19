@@ -15,6 +15,10 @@ import com.freightFox.service.BuyerService;
 @RestController
 public class BuyerController {
 
+	/**
+	 * Injected BuyerService interface and extracting the data from it
+	 */
+	
 	@Autowired
 	private BuyerService buyerService;
 	

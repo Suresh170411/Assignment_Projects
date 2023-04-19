@@ -6,6 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Class for getting the exact information about the error in the application
+ *
+ */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

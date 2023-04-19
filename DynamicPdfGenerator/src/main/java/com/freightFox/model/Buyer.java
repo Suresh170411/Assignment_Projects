@@ -31,6 +31,8 @@ public class Buyer {
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<Items> items = new ArrayList<>();
 	
+	
+	// Entity Replationship
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Seller seller;
 }

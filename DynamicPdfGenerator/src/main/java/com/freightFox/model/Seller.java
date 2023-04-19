@@ -28,6 +28,7 @@ public class Seller {
 	@Embedded
 	private Address address;
 	
+	//Entity Relationship
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "seller")
 	@JsonIgnore
 	private List<Buyer> buyers = new ArrayList<>();

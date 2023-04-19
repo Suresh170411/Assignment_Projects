@@ -43,10 +43,10 @@ public class PdfServiceImpl implements PdfService {
 		+ seller.getSellerName() 
 		+"\n"
 		+ seller.getAddress().getState() 
-		+","
+		+", "
 		+ seller.getAddress().getCountry()
 		+"\n"
-		+ seller.getSellerGstin());
+		+"GSTIN : "+ seller.getSellerGstin());
 		
 		document.add(sellerData);
 
@@ -54,13 +54,14 @@ public class PdfServiceImpl implements PdfService {
 		
 		for (int i=0; i<n; i++) {
 			
-			Paragraph buyerData = new Paragraph(buyers.get(0).getBuyerName() 
+			Paragraph buyerData = new Paragraph("Buyer :\n" 
+					+buyers.get(0).getBuyerName() 
 					+"\n"
 					+buyers.get(i).getAddress().getState()
-					+","
+					+", "
 					+buyers.get(i).getAddress().getCountry()
 					+"\n"
-					+ buyers.get(i).getBuyerGstin()
+					+"GSTIN : "+ buyers.get(i).getBuyerGstin()
 					+"\n"
 					+buyers.get(i).getItems());
 			

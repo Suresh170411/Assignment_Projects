@@ -6,8 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 
+/**
+ * Swagger Integration added using @OpenAPIDefinaiton
+ * @author Suresh
+ *
+ */
+
 @SpringBootApplication
-@OpenAPIDefinition(info = @Info(title = "FreightFox", version = "1.1"))
+@OpenAPIDefinition(info = @Info(title = "FreightFox PDF generator", version = "1.1"))
 public class DynamicPdfGeneratorApplication {
 
 	public static void main(String[] args) {
