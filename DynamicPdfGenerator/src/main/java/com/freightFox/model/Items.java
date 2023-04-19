@@ -8,5 +8,5 @@ public class Items {
 	private String name;
 	private Integer quantity;
 	private Integer rate;
-	private Integer amount = quantity*rate;
+	private Integer amount;
 }
