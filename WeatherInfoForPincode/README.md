@@ -15,7 +15,7 @@ This application is to generate a single REST API for weather information for a 
 </p>
 
 <p align="left">
-  <img width="400" height="350" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_3.png">
+  <img width="400" height="370" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_3.png">
 </p>
 
 ## Features
