@@ -1,5 +1,5 @@
 # FreightFox_Assignment
-This is a assignment given by FreightFox company
+This is an assignment given by FreightFox company for creating backend SpringBoot project.
 
 ## Click the following link to redirect
 
