@@ -63,6 +63,11 @@ Swagger-ui
 ```
 http://localhost:8888/swagger-ui/index.html
 ```
+## Used API Reference
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**: https://api.openweathermap.org/data/2.5/weather?zip=[PIN_CODE],in&appid=[YOUR_API_KEY] |
 
 ## API Root And Endpoint
 
