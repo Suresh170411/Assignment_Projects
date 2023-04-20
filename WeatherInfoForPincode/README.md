@@ -7,15 +7,15 @@ This application is to generate a single REST API for weather information for a 
 
 ## Schemas
 <p align="left">
-  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_1.png">
+  <img width="400" height="100" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_1.png">
 </p>
 
 <p align="left">
-  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_2.png">
+  <img width="500" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_2.png">
 </p>
 
 <p align="left">
-  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_3.png">
+  <img width="500" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_3.png">
 </p>
 
 ## Features
