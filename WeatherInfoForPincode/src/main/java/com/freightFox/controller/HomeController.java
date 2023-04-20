@@ -30,7 +30,7 @@ public class HomeController {
 		this.service = service;
 	}
 	
-	@GetMapping("/api/{stateCode}")
+	@GetMapping("/find/{stateCode}")
 	public ResponseEntity<Description> getData(@PathVariable ("stateCode") String stateCode) {
 		return new ResponseEntity<Description>(service.getAllData(stateCode),HttpStatus.OK);
 	}
