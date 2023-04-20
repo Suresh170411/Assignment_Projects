@@ -1,21 +1,26 @@
 # Dynamic PDF Generator
 
-![](https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/HeroImage.jpg)
+![](https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/HeroImage_WP.jpg)
 
 ## About
-Dynamic PDF Generator is a application using which user can generate the pdf of all the details which they store in the database.
+This application is to generate a single REST API for weather information for a particular day for a provided pincode.
 
-## ER Diagram
+## Schemas
 <p align="left">
-  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/ER%20Diagram.png">
+  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_1.png">
+</p>
+
+<p align="left">
+  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_2.png">
+</p>
+
+<p align="left">
+  <img width="700" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Schema_3.png">
 </p>
 
 ## Features
 
-- Seller and Buyer record can be registerd to the database
-- All the data can be shown in a PDF format
-- User can download the PDF file into it's local machine
-- Seller can see all the details by entering the seller ID
+- User can provide a pincode and can get all the weather information for that particular location.
 
 
 ## Setup and user guide
@@ -23,26 +28,33 @@ Dynamic PDF Generator is a application using which user can generate the pdf of 
 Starting up the server from the springBoot application
 ```
 <p align="left">
-  <img width="500" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/DataBaseRunning.png">
+  <img width="500" height="297" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/ServerRun_WP.png">
 </p>
 
 ```
-Home page for front end of Swagger-ui
+Swagger-ui
 ```
+- Select the Try it out button on the top right corner
 <p align="left">
-  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/LandingPage_Swagger.png">
+  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_1.png">
 </p>
+
+- In the check box pass the State Code or Pincode and then hit the Execute button
 <p align="left">
-  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/Swagger_Schema.png">
+  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_2.png">
 </p>
+
+- After hitting the Excute button the result will be shown just like the following
+<p align="left">
+  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_3.png">
+</p>
+
 
 ## Technologies And Dependencies Used
 - Java
 - Spring Boot
-- Spring Data JPA
 - Spring Web
 - Devtools
-- MySQL
 - Lombok
 - Maven
 - Swagger
@@ -54,32 +66,8 @@ http://localhost:8888/swagger-ui/index.html
 
 ## API Root And Endpoint
 
-- Register one Seller to the database
-- Method : POST
-```
-http://localhost:8888/seller/register
-```
-
-- Register one Buyer to the database
-- Method : POST
-```
-http://localhost:8888/buyer/register/{sellerId}
-```
-
-- Get the Seller by id from the database
+- Find the weather information about the specific pincode
 - Method : GET
 ```
-http://localhost:8888/seller/{sellerId}
-```
-
-- Get the Buyer by id from the database
-- Method : GET
-```
-http://localhost:8888/buyer/{buyerId}
-```
-
-- Download the PDF by passing the sellerId
-- Method : GET
-```
-http://localhost:8888/pdf/{sellerId}
+http://localhost:8888/find/{stateCode}
 ```
