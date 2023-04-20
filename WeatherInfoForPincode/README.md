@@ -41,12 +41,12 @@ Swagger-ui
 
 - In the check box pass the State Code or Pincode and then hit the Execute button
 <p align="left">
-  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_2.png">
+  <img width="500" height="300" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_2.png">
 </p>
 
 - After hitting the Excute button the result will be shown just like the following
 <p align="left">
-  <img width="500" height="250" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_3.png">
+  <img width="500" height="300" src="https://github.com/Suresh170411/FreightFox_Assignment/blob/main/ScreenShots/WeatherPincode/Swagger_3.png">
 </p>
 
 
